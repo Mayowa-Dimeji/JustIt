@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  background-color: crimson;
+  color: white;
+}
+
+.container {
+  display: grid;
+
+  /* * "repeat(3, 1fr)" - This dictates that we want to repeat 3 columns of 1fr */
+  grid-template-columns: repeat(3, 1fr);
+  /* * Rows are automatically generated based on the content or number of items within our container */
+
+  /* * grid-template-rows - follows the same concept as gtc and allows to strictly define the number and size of our rows */
+  /* grid-template-rows: 200px 200px 200px 200px; */
+
+  /* * grid-auto-rows - specify a size to be applied to all rows that are generated  */
+  /* grid-auto-rows: 100px; */
+
+  /* * minmax() - Allows us to specify a minimum size and a maximum size */
+  grid-auto-rows: minmax(50px, auto);
+}

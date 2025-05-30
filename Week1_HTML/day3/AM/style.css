@@ -1,0 +1,65 @@
+/* Main container box model */
+.main-box {
+  background-color: aqua;
+  color: white;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding: 100px 20px; */
+  border: 5px solid red;
+}
+
+/* Nested box models */
+.box {
+  background-color: white;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border: 3px dashed rebeccapurple;
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+/* Task 1: Apply Custom Styling Classes Update your index.html file by assigning
+ the CSS classes .block1 and .block2 to the first two <div class="box">elements.
+ This will apply any unique styles defined in those classes to the respective boxes. */
+
+/* .block1 {
+  
+  background-color: lightblue;
+  padding: 10px;
+}
+.block2 {
+  
+  background-color: lightgreen;
+  padding: 10px;
+}
+.block3 {
+  
+  background-color: pink;
+  padding: 10px;
+}
+.block4 {
+  
+  background-color: plum;
+  padding: 10px;
+} */
+/* Task 2: Enhance the .box Class for Inline Layout
+Modify the .box class in your CSS by adding the following three properties:
+
+
+display: inline-block;
+width: 200px;
+vertical-align: top;
+These properties will allow the boxes to sit side by side horizontally.
+
+Note: To observe the effect of display: inline-block;, comment out the .block1 and .block2 styles you previously applied. 
+This helps you focus only on the new layout behavior introduced. */
+
+/* Extension Task: Expand Your Layout
+Add two more <div class="box">elements in your HTML. With four total boxes,
+you’ll see how they align from left to right using inline-block. */

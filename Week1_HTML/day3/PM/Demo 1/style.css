@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  background-color: darkolivegreen;
+  color: white;
+}
+
+.side {
+  background-color: grey;
+  color: white;
+}
+
+/* ! CSS GRID CODE BELOW: */
+
+/* * Similar to flexbox the majority of CSS Grid properties are applied to a parent element or container element */
+.container {
+  display: grid;
+
+  /* * grid-template-columns: allows to dictate how many column we want inside of our grid and how much size / space each column should take up */
+
+  /* * To determine our columns we need to provide a number of values to gtc - how ever many values we determine will set the number of columns. EG: 200px 200px - gives us 2 columns of 200px width*/
+
+  /* ! With grid we can use "fr" units which represent fractions of space */
+  grid-template-columns: 1fr 1fr;
+  /* * If you wish to determine a gap between items we can use the "gap" property */
+  gap: 1px;
+  row-gap: 1px;
+  column-gap: 5px;
+}

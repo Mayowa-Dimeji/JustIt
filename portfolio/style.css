@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+.heading {
+  margin: 0;
+  background-color: darkslategrey;
+}
+.about {
+  margin: 0;
+  background-color: black;
+}
+.projects {
+  margin: 0;
+  background-color: blue;
+}

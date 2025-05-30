@@ -1,0 +1,115 @@
+/* 
+ * Apply the `border-box` model globally. 
+ * This ensures that padding and border are included in an element's total width/height. 
+ * Also sets the default font to "Poppins".
+ */
+
+/* Center the heading */
+* {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+/* 
+ * General box styling: 
+ * - White text color
+ * - Large font size
+ * - Centered text 
+ * - Padding for spacing inside the box
+ */
+.box {
+  color: purple;
+  font-size: large;
+  text-align: center;
+  padding: 5px;
+}
+/* 
+ * Container styling:
+ * - A black border around the container
+ * - Fixed height of 80% of the viewport height (vh)
+ * - Rounded corners (border-radius)
+ * - `overflow: hidden;` prevents content from spilling out
+ */
+.container {
+  border: 5px solid black;
+  height: 80vh;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Define background colors for the three boxes */
+.box1 {
+  background-color: plum;
+  flex-basis: 300px;
+}
+.box2 {
+  background-color: blue;
+  flex-basis: 300px;
+  flex-grow: 2;
+  flex-shrink: 1;
+}
+.box3 {
+  background-color: aquamarine;
+  flex-basis: 300px;
+  flex-shrink: 4;
+  /* flex-grow: 4; */
+}
+h1 {
+  text-align: center;
+}
+/* 
+ * Make the container a flexbox: 
+ * - This arranges its children (`.box1`, `.box2`, `.box3`) in a row.
+ */
+
+/* Tasks */
+
+/* Step 1: Flexbox Layout Setup In your CSS,
+ ensure the .container uses Flexbox by adding this line:
+
+ .container {
+     display: flex;
+ } */
+
+/* 
+ Step 2: Experiment with justify-content Inside the .container CSS block,
+ uncomment each justify-content line one at a time to see how it affects spacing between the boxes.
+ 
+ */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* Try other values by commenting/uncommenting: */
+  /* justify-content: space-around; */
+  /* justify-content: flex-start; */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+}
+/* Observe how each setting changes the position of the boxes within the container. */
+
+/* Step 3: Apply Fixed Width to .box1 Give .box1 a fixed width using flex-basis. */
+/* .box1 {
+     flex-basis: 300px;
+ }
+ */
+
+/* This sets the starting size of .box1. */
+
+/* Step 4: Make .box2 Flexible In your .box2 CSS block,
+ apply the following: */
+/* .box2 {
+     flex-basis: 300px;
+     flex-grow: 1;
+     flex-shrink: 1;
+ } */
+
+/* Step 5: Control Shrinking of .box3 Now update .box3 with: */
+/* .box3 {
+     flex-basis: 300px;
+     flex-shrink: 4;
+ } */
+
+/* Challenge Extension: Resize your browser window and observe how the boxes respond.
+  What happens when there’s too little or too much space? 
+  Try changing flex-grow on .box2 to 2 or 0 and see the effect. */

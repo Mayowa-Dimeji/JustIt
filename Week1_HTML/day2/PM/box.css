@@ -1,0 +1,63 @@
+/* Remove default body margin */
+body {
+  margin: 0;
+}
+
+/* Main container box model */
+
+/* Nested box models */
+
+/* Optional: Individual styling for each nested box */
+
+.main-box {
+  background-color: aqua;
+  color: white;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding: 100px 20px; */
+  border: 5px solid red;
+}
+/* Remove default body margin */
+body {
+  margin: 0;
+}
+
+/* Main container box model */
+.main-box {
+  background-color: aqua;
+  color: white;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding: 100px 20px; */
+  border: 5px solid red;
+}
+
+/* Nested box models */
+.box {
+  background-color: white;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  border: 3px dashed rebeccapurple;
+  text-align: left;
+}
+
+/* Optional: Individual styling for each nested box */
+.model1 {
+  background-color: blue;
+}
+.model2 {
+  background-color: red;
+}
+.model3 {
+  background-color: yellow;
+}
+.model4 {
+  background-color: green;
+}

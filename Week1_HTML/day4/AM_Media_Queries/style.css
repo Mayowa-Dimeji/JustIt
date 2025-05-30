@@ -1,0 +1,66 @@
+/* set background colour to aquamarine */
+
+body {
+  background-color: pink;
+}
+
+.container {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+#viewport-width {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 2em;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 4em;
+}
+
+.icon {
+  color: blueviolet;
+  font-size: 180px;
+}
+
+.desktop,
+.tablet,
+.smartphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* media queries for tablet */
+@media (max-width: 900px) {
+  body {
+    background-color: antiquewhite;
+  }
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: flex;
+  }
+}
+
+/* media queries for smartphone */
+@media (max-width: 550px) {
+  body {
+    background-color: cornflowerblue;
+  }
+  .smartphone {
+    display: flex;
+  }
+  .tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #353535;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+header {
+  padding: 20px 40px;
+  background-color: #1d1d1d;
+  align-items: center;
+}
+
+header h1 {
+  grid-column: span 6;
+}
+
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: right;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+}
+
+main {
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+main img {
+  width: 100%;
+  grid-column: span 6;
+}
+
+main .welcome {
+  grid-column: 8 / span 5;
+  text-align: center;
+}
+
+main h3 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+main .card {
+  text-align: center;
+  grid-column: span 4;
+  background-color: #1d1d1d;
+  padding: 10px 20px;
+}
+
+/* ! Media Queries */
+
+@media (max-width: 1200px) {
+  main img {
+    grid-column: 2 / span 10;
+  }
+
+  main .welcome {
+    grid-column: 2 / span 10;
+  }
+
+  main .card {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  header h1 {
+    grid-column: span 12;
+    text-align: center;
+    margin: 0;
+  }
+
+  header nav {
+    grid-column: span 12;
+    justify-self: center;
+  }
+
+  main {
+    margin: 30px auto;
+  }
+
+  main img {
+    grid-column: span 12;
+  }
+
+  main .welcome {
+    grid-column: span 12;
+  }
+
+  main .card {
+    grid-column: span 12;
+  }
+}

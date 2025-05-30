@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AM's Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!--  header navigation  -->
+  <header>
+    <nav>
+      <!-- Navigation links scroll to respective page sections -->
+      <a href="#home">Home</a>
+      <a href="#my_about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact_form">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content section  -->
+  <main>
+
+    <!--  Home section  -->
+    <section id="home">
+      <h1>Home</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse rerum ratione, doloremque necessitatibus voluptas
+        nisi quos consectetur molestias temporibus voluptatibus autem veniam tenetur, atque perspiciatis sunt? Officia,
+        labore maxime quisquam aliquid cumque impedit eius, enim facilis, optio dignissimos aspernatur quia! Nisi rerum,
+        exercitationem, assumenda praesentium numquam ab aperiam perferendis atque quod voluptates at facilis modi
+        quidem? Ipsam, quas neque. Aut, nesciunt eius numquam excepturi sint rerum aperiam praesentium iusto corrupti
+        blanditiis quidem neque laudantium ab dolore! Magni repudiandae quaerat nulla numquam error quas! Corporis
+        placeat blanditiis rerum. Magnam dolor beatae facilis sit quod fugit tempore obcaecati. Eaque autem accusantium
+        reprehenderit!
+      </p>
+    </section>
+
+    <!--  About section-->
+    <section id="my_about" class="about-section">
+      <section class="about-image">
+        <!-- Developer  image -->
+        <img src="./assets/yourImage.png" alt="Profile Image">
+      </section>
+      <section class="about-text">
+        <h2>About</h2>
+        <p>
+          I am AM J, a passionate developer dedicated to creating clean,
+          modern, and responsive web applications. I enjoy blending elegant
+          design with efficient code to solve real-world problems.
+        </p>
+      </section>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <section class="project-cards">
+        <!-- Project card  -->
+        <section class="project-card">
+          <h3>Project One</h3>
+          <p>Brief description of the project or feature.</p>
+        </section>
+        <section class="project-card">
+          <h3>Project Two</h3>
+          <p>Brief description of the project or feature.</p>
+        </section>
+        <section class="project-card">
+          <h3>Project Three</h3>
+          <p>Brief description of the project or feature.</p>
+        </section>
+        <section class="project-card">
+          <h3>Project Four</h3>
+          <p>Brief description of the project or feature.</p>
+        </section>
+      </section>
+    </section>
+
+    <!--Contact section-->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="confirmation.html" id="contact_form">
+        <!-- Name input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Message textarea field -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+   <!-- confirmation section -->
+    <section id="confirmation" class="confirmation-message">
+      <h1>Thank You!</h1>
+      <p>Your message has been received. I'll get back to you as soon as possible.</p>
+      <a href="index.html" class="back-home-btn">Return to Home</a>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 AM J. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
