@@ -1,0 +1,32 @@
+/* confirmation message  */
+.confirmation-message {
+  /* by default hides the confirmation message */
+  display: none;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* use the pseudo selector .active to display */
+.confirmation-message:active {
+  display: block;
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  padding: 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+  margin-top: 2rem;
+}
