@@ -53,14 +53,14 @@ console.table();
 console.log();
 
 // * Using bracket notation we can also edit / update items
-coffeeOrder[] = "James - Flat White";
+// coffeeOrder[] = "James - Flat White";
 
 /*
 * Referencing an index that is undefined, will return undefined
 * However we can also set new items to the index with bracket notation
 */
 console.log();
-coffeeOrder[] = "New array item";
+// coffeeOrder[] = "New array item";
 console.log();
 
 /*
@@ -130,12 +130,12 @@ let colours = [
 ];
 
 console.log(colours);
-
-console.log(colours[]);
-console.log(colours[]);
-console.log(colours[]);
-console.log(colours[]);
-console.log(colours[]);
+// loop example
+// console.log(colours[]);
+// console.log(colours[]);
+// console.log(colours[]);
+// console.log(colours[]);
+// console.log(colours[]);
 
 /*
 * For Loop:
@@ -243,21 +243,38 @@ const string = 'Hello World';
 */
 
 // 1:
-
-
+console.log("Task 1: Favourite Films");
+let films = ["Vampire Diaries","The Big Bang Theory","Family guy"]
+films[films.length] = "The Simpsons";
+films.push("The Office");
+films.forEach(function(film) {
+    console.log(film);
+});
 
 // 2:
+console.log("Task 2: Random Numbers");
+for (let i = 0; i < 10; i++) {
+    let randomm_number= Math.round(Math.random() * 100) + 1;
+    console.log(randomm_number);
 
-
-
+}
 // 3:
-
+console.log("Task 3: Count Backwards from 20 to 0");
+for (let i=20; i >=0; i--){
+    console.log(i);
+}
 
 
 
 // 4:
-
-
-
-
+console.log("Task 4: Random Numbers Divisible by 5");
+for (let i=0; i<5;i++){
+    let random_number=Math.round(Math.random()*50) + 1;
+    // why plus one?
+    if ( random_number%5 ==0){
+        console.log(`${random_number} is divisible by 5`);
+    }else{
+        console.log(`${random_number} is not divible by 5`);
+    }
+}
 
