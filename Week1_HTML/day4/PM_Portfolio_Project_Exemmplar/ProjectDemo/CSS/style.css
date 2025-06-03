@@ -1,0 +1,224 @@
+*{
+    /* ensure the padding and border are included
+    in the width and heigh */
+    box-sizing: border-box;
+    /* background: content-box radial-gradient(crimson, skyblue); */
+    /* removes the default margin/padding and set mrgin/padding to 0 */
+    margin: 0;  
+    padding: 0;
+ 
+    /* sets default font for all elements */
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body{
+ 
+    /* set a line height for text  */
+    background: linear-gradient(135deg, pink, purple);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+ 
+header {
+    background-color: #222;
+    padding: 1rem;
+ 
+}
+ 
+/* USe the descendant combinator/selector relationship  */
+header nav {
+    /* makes nav links display in a row  */
+    display: flex;
+    /* wrap items in small screen  */
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 1rem;
+}
+ 
+/* this is to style all anchor tag elements "a"  */
+header nav a{
+    color: white;
+    /* removes the underline on the acnchor tag text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1 px solid #fff;
+    border-radius: 5px;
+    transition:  background 0.3s;
+}
+/* header nav a:hover is a compound selector
+and a:hover on its own is pseudo-element selector*/
+header nav a:hover {
+    background: #455;
+}
+ 
+/* Main */
+ 
+main {
+    /* enables a grid layout  */
+    display: grid;
+    /* responsive columns  */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    /* space between grid items  */
+    gap: 1.5rem;
+    /* padding around the grid  */
+    padding: 2rem;
+ 
+}
+ 
+ 
+/* about  section  */
+ 
+#my_about {
+    display: flex;
+    align-items: center;
+    /* space betewwn image and about text */
+    gap: 1rem;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    /* decorative left border */
+    border-left: 5px solid #666;
+ 
+}
+ 
+#my_about img,.project-card img  {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+ 
+}
+ 
+#my_about p {
+    /* Paragraph takes up the remaining space  */
+    flex: 1;
+}
+ 
+ 
+/* projects section   */
+#projects {
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+ 
+.project-cards{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    /* space above cards */
+    margin-top: 1rem;
+}
+ 
+.project-card{
+    background-color: #7fffd4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgb(red, green, blue, 0.5s);
+ 
+ 
+}
+ 
+ 
+#contact {
+    padding: 1.5rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+}
+/* Use the element name and the id to specifically :target
+form element with the id contact_form (selector relationship between
+elements */
+form#contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+ 
+}
+/* Use the attribute (type) selector to target an element  */
+form#contact_form input[type="text"],
+ 
+form#contact_form input[type="email"] ,
+ 
+ 
+form#contact_form textarea{
+    padding:  0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+ 
+}
+ 
+ 
+form#contact_form input[type="submit"] {
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: white;
+}
+ 
+/* confirmation message  */
+.confirmation-message{
+    /* by default hides the confirmation message */
+    display: none;
+    text-align: center;
+    padding: 3rem;
+}
+ 
+/* use the pseudo selector .active to display */
+.confirmation-message:active{   display: block; }
+ 
+ 
+.back-home-btn{
+    display: inline-block;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    padding: 5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+}
+ 
+ 
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    margin-top: 2rem;
+}
+ 
+/* media queries */
+ 
+ 
+ 
+@media (max-width: 1024px){
+    #my_about{
+        /* stack the image and text vertically; */
+        flex-direction: column;
+        text-align: center;
+    }
+    #my_about img{
+        margin-bottom: 1rem;
+    }
+}
+ 
+@media (max-width: 768px){
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    main{
+        padding: 1rem;
+        /* single column layout  */
+        grid-template-columns: 1fr;
+    }
+}
