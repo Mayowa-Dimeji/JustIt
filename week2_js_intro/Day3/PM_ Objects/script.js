@@ -130,7 +130,7 @@ const employee = {
 
 
 // Task 1 access nested object properties to log the name of John's supervisor to the console.
-
+console.log(employee.department.supervisor.name); // Output: Jane Smith
 
 
 
@@ -163,8 +163,9 @@ const library = {
 };
 
 // Task 2 access nested object properties to log  the title of 'The Great Gatsby' to the console.
+console.log(library.books[0].title); // Output: The Great Gatsby
 // Task 3 access nested object properties  objects inside the books array to log  the  year of the book title 'To Kill a Mockingbird'
-
+console.log(library.books[1].details.year); // Output: 1960
 
 
 
@@ -172,10 +173,27 @@ const library = {
 // ! JavaScript Objects Tasks:
 
 // ? 1: Create an object called ‘person’ with keys of name age and city. Once created log your object to the console.
+const person = {
+    name: "Alice",
+    age: 30,
+    city: "New York",
+
+    // greet : function() {
+    //     return `Hello, my name is ${name}!`;
+    // }
+};
+console.table(person); // Output: { name: 'Alice', age: 30, city: 'New York' }
 
 // ? 2: Add a method to your ‘person’ object that returns a string greeting the person by name.
-
+person.greet = function() {
+    return `Hello, my name is ${this.name}!`;
+};
 // ? 3: Update the values of your ‘person’ object with dot notation to familiarise yourself with how new values can be set to an object. 
+person.age = 31; // Update age
+person.city = "Los Angeles"; // Update city 
+person.name = "Bob"; // Update name
+console.table(person); // Output: { name: 'Bob', age: 31, city: 'Los Angeles' }
+console.log(person.greet()); // Output: Hello, my name is Bob!
 
 
 // TODO: If you manage to complete all of the tasks, have a go at creating your own nested object. See example below to used as a reference
@@ -200,3 +218,89 @@ const films = {
         genre: "Sci-Fi"
     }
 }
+
+//nested object of me
+const my_family = {
+    Daddy:{
+        role: "Father",
+        philosophy: "God first, family second, work third",
+        
+    },
+    Mummy: {
+        role: "Mother",
+        philosophy: "The blanket of God is wide enough for all",
+        
+    },
+    Titi: {
+        role: "Sister", 
+        philosophy: "the life you want is on the other side of fear",
+        
+    },
+    Dami:{
+        role: "Sister",
+        philosophy: "God is a rewarder of those who diligently seek him",
+        
+    },
+    Mayowa: {
+        role: "Me/Sister",
+        philosophy: "God is the source of my strength",
+        
+    },
+    Abike:{
+        role: "Sister",
+        philosophy: "God is the source of my strength",
+        
+    }
+
+}
+console.table(my_family); // Display the nested object in a table format in the console
+
+// another nested object of greek gods and godessses
+const greekGods = {
+    Zeus: {
+        title: "King of the Gods",
+        domain: "Sky and Thunder",
+        symbols: ["Lightning Bolt", "Eagle"]
+    },
+    Hera: {
+        title: "Queen of the Gods",
+        domain: "Marriage and Family",
+        symbols: ["Peacock", "Cow"]
+    },
+    Poseidon: {
+        title: "God of the Sea",
+        domain: "Sea and Earthquakes",
+        symbols: ["Trident", "Horse"]
+    },
+    Athena: {
+        title: "Goddess of Wisdom",
+        domain: "Wisdom and War Strategy",
+        symbols: ["Owl", "Olive Tree"]
+    },
+    Apollo: {
+        title: "God of the Sun",
+        domain: "Music, Arts, and Prophecy",
+        symbols: ["Lyre", "Laurel Wreath"]
+    },
+    Artemis: {
+        title: "Goddess of the Hunt",
+        domain: "Hunt and Wilderness",
+        symbols: ["Bow and Arrow", "Deer"]
+    },
+    Ares: {
+        title: "God of War",
+        domain: "War and Violence",
+        symbols: ["Spear", "Helmet"]
+    },
+    Aphrodite: {
+        title: "Goddess of Love",
+        domain: "Love and Beauty",
+        symbols: ["Dove", "Rose"]
+    },
+    Hermes: {
+        title: "Messenger of the Gods",
+        domain: "Commerce and Thieves",
+        symbols: ["Caduceus", "Winged Sandals"]
+    }
+};
+console.table(greekGods); // Display the nested object in a table format in the console

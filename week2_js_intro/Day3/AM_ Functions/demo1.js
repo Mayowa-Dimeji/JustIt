@@ -1,9 +1,10 @@
 // Function to subtract two numbers
 function subtract(a, b) {
+    // Returns the difference
     return a - b;
 }
 
-// Returns the difference
+
 
 
 // Wait for the HTML document to be fully loaded
@@ -33,6 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // function to promt user input
+
+
+
+
+
+
     
     // Ask the user for two numbers using prompt()
 
