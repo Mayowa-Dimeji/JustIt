@@ -175,18 +175,32 @@ let testScore = 65;
 
 // 1: Age check
 // condition ? exprIfTrue : exprIfFalse
-
-
+let age= 20; // Example age variable
+if (age >= 18) {
+    console.log("What would you like to drink?");
+}else {
+    console.log("Sorry, you are not old enough to be served alcohol.");
+}
 
 
 // 2:
 
-
+let my_number = 7; // Example number variable
+if (my_number % 2 === 0) {
+    console.log("The number is even.");
+} else {
+    console.log("The number is odd."); 
+}
 
 
 
 //3
-
+let another_number = 15; // Example number variable
+if (another_number % 3 === 0 || another_number % 5 === 0) {
+    console.log("The number is divisible by 3 or 5.");
+}else {
+    console.log("The number is not divisible by 3 or 5.");
+}
 
 // 4:
 
