@@ -144,16 +144,34 @@ updateUserStatus();
 */
 
 // Task 1: Personalised Greeting
+function personalisedGreeting(firstName, surname) {
+    return `Hello ${firstName} ${surname}, welcome back!`;
+}
 
 
 
 // Task 2:
 
-
+function sortStringAlphabetically(inputString) {
+    return inputString.split('').sort().join('');
+}
 
 // Task 3: ATM
 
+function atm(withdrawalAmount, pin) {
+    const storedPin = "1234"; // Example stored pin
+    const accountBalance = 1000; // Example account balance
 
+    if (pin !== storedPin) {
+        return "Incorrect PIN. Transaction declined.";
+    } else if (withdrawalAmount > accountBalance) {
+        return "Insufficient funds. Transaction declined.";
+    } else {
+        // update account balance
+        accountBalance -= withdrawalAmount;
+        return `Transaction approved. You have withdrawn $${withdrawalAmount}.`;
+    }
+}
 
 
 // Parameters are set when we declare the function
